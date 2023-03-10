@@ -29,12 +29,12 @@
     background-color: rgba(211, 234, 233, 1);
     
     /* margin-left: 50px;
-    margin-right: 50px; */width: 900px;
+    margin-right: 50px; */
+    width: 900px;
 }
 .logo{
     height: 70px;
     width: 70px;
-    cursor: pointer;
 }
 .logo:hover{
     animation: glitch 1s linear infinite;
@@ -139,31 +139,46 @@ ul li {
     display: flex;
     align-items: center;  
 }
+.li-alex-link{
+ text-decoration: none; 
+ color: black;
+ cursor: pointer; 
+ -webkit-transition: color 0.2s ease-out;
+ -moz-transition: color 0.2s ease-out;
+ -o-transition: color 0.2s ease-out;
+ -ms-transition: color 0.2s ease-out;
+ transition: color 0.2s ease-out;
+}
+.li-alex-link:hover{
+  text-decoration: none; 
+  color: rgb(167, 115, 115);
+ }
 #linkedIn{
    display: flex;
    align-items: center;
    justify-content: center;
-   cursor: pointer; 
-   -webkit-transition: color 0.2s ease-out;
-   -moz-transition: color 0.2s ease-out;
-   -o-transition: color 0.2s ease-out;
-   -ms-transition: color 0.2s ease-out;
-   transition: color 0.2s ease-out;
-}
-#linkedIn:hover{
-    color: rgb(167, 115, 115);
 }
 
 .hero-outer-container{
     width: 100vw;
     height: 100vh;
+    /* height: 100vh; */
     background-image: linear-gradient(180deg, rgba(231, 234, 211, 1),  rgba(211, 234, 233, 1));
     overflow: hidden;
 }
 .hero-container{
+    /* padding: 40px; */
+    /* height: 100vh; */
+    /* background-color: green; */
     display: flex;
-    align-items: center; 
-    justify-content: center;
+    /* margin-top: 100px; */
+    /* padding: 40px; */
+}
+.hero-inline-text{
+  display: inline;
+}
+.hero-text-hero-container{
+  margin: auto;
 }
 .headshot{
     width: 900px;
@@ -173,18 +188,71 @@ ul li {
     object-fit:contain;
     transform: scaleX(1); 
     font-family: 'Jomolhari', serif;
-  z-index: 0;
 }
 .headshot:hover{
     filter: none;
 }
 .hero-text{
-    width: 400px;
-    height: 300px;
-    cursor: pointer;
-    font-size: 40px;
-    overflow-y:visible
+    /* width: 400px;
+    height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(10px,3vw, 40px);;
+  padding: 20px;
 }
+.hero-web{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(40px,3vw, 150px);;
+  /* padding: 20px; */
+}
+.img-hero-contain{
+  width: fit-content;
+ 
+}
+
+
+.develper-hero{
+  position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(30px,1vw, 10px);;
+    padding: 20px;
+    cursor: pointer;
+    transition: filter .2s ease-in-out;
+    opacity: 1;
+}
+.develper-solid{
+  position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: clamp(40px,3vw, 150px);;
+    padding: 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+.develper-hero span{
+  position: relative;
+  transition: 0.3s all;
+
+  filter: blur(7px);
+}
+.develper-hero span:hover{
+  position: relative;
+  filter: blur(0px);
+}
+/* .hero-devel{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(100px,3vw, 150px);;
+  padding: 20px;
+} */
 .hero-text-hide{
   transition: filter .2s ease-in-out;
   display: none;
@@ -275,7 +343,7 @@ ul li {
 .portfolio-skills-container{
   margin-top: 20px;
   background-color: rgb(244, 241, 244);
-  box-shadow: 0px 0px 9px 0px rgba(206,177,177,0.75);
+  box-shadow: 0px 0px 9px 0px rgba(206,177,177,0.75);;
   width: fit-content;
 border-radius: 10px;
   margin: auto;
@@ -289,18 +357,20 @@ border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 400px;
+  height:fit-content;
+  padding: 20px;
   margin-top: 10px;
   cursor: pointer;
 }
 .todo-contain, .react-contain,.pic-slider-contain{
   display: inline;
-  background-color: rgb(244, 241, 244);
+  background-color: #ebe0f1;
   padding: 10px;
   overflow: hidden;
   /* width: 300px; */
   border-radius: 20px;
   height: fit-content;
+  box-shadow: 0px 0px 5px 5px rgba(203,203,203,0.75);
  
 }
 .todo-list,.react,.img-slider{
@@ -398,7 +468,8 @@ height: 300px;
 .contact-logos{
   margin-top: 10px;
   background-color: rgb(244, 241, 244);
-  box-shadow: 0px 0px 9px 0px rgba(206,177,177,0.75);border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgba(206,177,177,0.75);
+  border-radius: 10px;
   padding: 5px;
   color: #313131;
 }
@@ -628,8 +699,8 @@ label.fcf-label {
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: rgb(106, 103, 194);
+    border-color: rgb(106, 103, 194);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 

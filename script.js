@@ -4,9 +4,10 @@ const about = document.getElementById("about")
 const navOptionEl = document.querySelectorAll('.nav-option')
 const slidingWrapper = document.querySelector('.slider')
 const button = document.getElementById("send-button")
-
-button.addEventListener("click",()=>{
-    console.log("messss");
+const developerHero = document.getElementById("develper-hero")
+developerHero.addEventListener("click",()=>{
+    // developerHero.classList.toggle("develper-solid")
+    console.log("mmm");
 })
 
 
